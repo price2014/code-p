@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-29T13:28:58 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d7dfeaa8-ce9c-421d-a2ec-f1fad4643dd9">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="VIsion"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM item]]>
+	</queryString>
+	<field name="id" class="java.lang.Long"/>
+	<field name="last_modified" class="java.sql.Timestamp"/>
+	<field name="item_num" class="java.lang.String"/>
+	<field name="descr" class="java.lang.String"/>
+	<field name="unit_price" class="java.math.BigDecimal"/>
+	<field name="case_retail" class="java.math.BigDecimal"/>
+	<field name="shlf_price" class="java.math.BigDecimal"/>
+	<field name="wc_shlfprce" class="java.math.BigDecimal"/>
+	<field name="cc_shlfprce" class="java.math.BigDecimal"/>
+	<field name="sale_price" class="java.math.BigDecimal"/>
+	<field name="pack_sale_price" class="java.math.BigDecimal"/>
+	<field name="case_sale_price" class="java.math.BigDecimal"/>
+	<field name="sale_type" class="java.lang.String"/>
+	<field name="itm_mup" class="java.math.BigDecimal"/>
+	<field name="pri_vndr" class="java.lang.String"/>
+	<field name="last_date_sold" class="java.sql.Date"/>
+	<field name="acpr_key" class="java.lang.String"/>
+	<field name="br_deposit" class="java.math.BigDecimal"/>
+	<field name="upc_flag" class="java.lang.String"/>
+	<field name="strtdate" class="java.sql.Date"/>
+	<field name="enddate" class="java.sql.Date"/>
+	<field name="last_vndr" class="java.lang.String"/>
+	<field name="last_date" class="java.sql.Date"/>
+	<field name="tax_flag" class="java.lang.String"/>
+	<field name="full_case_discount" class="java.lang.Integer"/>
+	<field name="mixed_case_discount" class="java.lang.Integer"/>
+	<field name="item_vintage" class="java.lang.String"/>
+	<field name="alt_item" class="java.lang.String"/>
+	<field name="item_location" class="java.lang.String"/>
+	<field name="shelf_onhand" class="java.lang.Integer"/>
+	<field name="shelf_capacity" class="java.lang.Integer"/>
+	<field name="web_flag" class="java.lang.String"/>
+	<field name="special_price" class="java.math.BigDecimal"/>
+	<field name="special_qty" class="java.lang.Integer"/>
+	<field name="new_base_cost" class="java.math.BigDecimal"/>
+	<field name="bc_eff_date" class="java.sql.Date"/>
+	<field name="adj_percent" class="java.lang.Integer"/>
+	<field name="adj_dollar" class="java.math.BigDecimal"/>
+	<field name="notes" class="java.lang.String"/>
+	<field name="long_description" class="java.lang.String"/>
+	<field name="deptsubdept" class="java.lang.String"/>
+	<field name="case_qty" class="java.lang.Integer"/>
+	<field name="pack_qty" class="java.lang.Integer"/>
+	<field name="size_descr" class="java.lang.String"/>
+	<field name="bottle_minimum" class="java.math.BigDecimal"/>
+	<field name="deleted_flag" class="java.lang.String"/>
+	<field name="points" class="java.lang.Integer"/>
+	<field name="kit_flag" class="java.lang.String"/>
+	<field name="allow_manual_discount" class="java.lang.String"/>
+	<field name="free_goods_flag" class="java.lang.String"/>
+	<field name="min_onhand_qty" class="java.lang.Integer"/>
+	<field name="min_reorder_qty" class="java.lang.Integer"/>
+	<field name="max_reorder_qty" class="java.lang.Integer"/>
+	<field name="label_modified" class="java.sql.Timestamp"/>
+	<field name="flags" class="java.lang.String"/>
+	<field name="sug_unit_price" class="java.math.BigDecimal"/>
+	<field name="item_inserted" class="java.sql.Timestamp"/>
+	<field name="whole_item_num" class="java.lang.String"/>
+	<field name="fraction_count" class="java.lang.Integer"/>
+	<field name="current_sale_mid" class="java.lang.Integer"/>
+	<field name="inbound_deposit" class="java.math.BigDecimal"/>
+	<field name="alt_inventory_factor" class="java.lang.Integer"/>
+	<field name="imported_item_number" class="java.lang.String"/>
+	<field name="proof" class="java.math.BigDecimal"/>
+	<group name="descr">
+		<groupExpression><![CDATA[$F{descr}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
